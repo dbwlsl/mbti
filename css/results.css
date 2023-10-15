@@ -1,0 +1,75 @@
+body {
+  background-color: #EAF8FF;
+  background-image: url("/images/result_bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.character {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.result {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result .box {
+  min-height: 70px; /* min-height를 지정하는 이유: 화면의 상태에 따라 결과 박스가 작아지는 것을 방지*/
+  background-color: #FFFFFF;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  display: flex;  
+  justify-content: center;  /* 글자를 가운데 정렬 (display:flex)랑 같이 사용 */
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.result h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.result .jobs {
+  height: 200px;
+  display: flex;
+  gap: 10px;    /* 수평정렬(display:flex)된 div 사이의 간격 설정*/
+}
+
+.result .job {
+  flex: 1;    /* 수평정렬된 가로 너비의 비율 flex:1은 div 박스 두개가 1:1 비율로 이루어져 있음을 의미(=같은 너비로 만들어져라) */
+  background-color: #FFFFFF;
+  background-image: url("/images/result_star.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFE603;
+  border-radius: 20px;
+}
+
+.result .lecture img {
+  margin-bottom: 40px;
+  width: 100%;
+}
